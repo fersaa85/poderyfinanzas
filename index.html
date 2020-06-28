@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- /.website title -->
+<title>Revista Poder y Finanzas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="http://www.poderyfinanzas.com/wp-content/uploads/2018/01/faviconlogo.png" />
+
+<!-- /.Analitycs -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-129037654-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<meta property="og:url"                content="https://poderyfinanzas.com/revista" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Revista Poder y Finanzas" />
+<meta property="og:description"        content="Revista Poder y Finanzas" />
+<meta property="og:image"              content="https://poderyfinanzas.com/revista" />
+
+<!-- /.SEO tags -->
+<meta name="description" content="Revista Poder y Finanzas">
+<meta name="keywords" content="poder y finanzas, poder, finanzas, servicio al cliente, carlos slim, slim, bitcoin, mercadotecnia sustentable">
+<meta name="author" content="Poder y Finanzas">
+
+<!-- CSS Files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+
+<!-- Colors -->
+<link href="css/css-index.css?v=1" rel="stylesheet" media="screen">
+
+
+<!-- Google Fonts -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+
+</head>
+
+<body>
+<!-- /.preloader -->
+<div id="preloader"></div>
+<div id="top"></div>
+
+<div class="header" id="header">
+	<!-- partials/header.html -->
+</div>
+
+
+
+<div class="container-fluid bg-red">
+	<div class="mag">
+		<div class="row">
+			<h2 style="text-align: center"> Descarga Revista Poder y Finanzas Nov 18</h2>
+			<br>
+			<div class="col-md-6" id="portada">
+				<!-- partials/portada.html -->
+			</div>
+
+			<div class="col-md-6" id="indice">
+				<!-- partials/indice.html -->
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<div class="header" id="myfooter">
+	<!-- partials/footer.html -->
+</div>
+
+<div id="modal">
+	<!-- partials/modal.html -->
+</div>
+
+
+
+
+		<!-- /.javascript files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+<script>
+    var magazine = 'https://e.issuu.com/anonymous-embed.html?u=poderyfinanzas&d=poder-y-finanzas-nov-18&p='
+    var page =  3;
+    var iframemagazine = magazine + page;
+
+
+    $(document).ready(function () {
+        $("#iframemagazine").attr('src', iframemagazine);
+
+        $(document).on("click", ".set-page-magazine", function(e){
+			e.preventDefault();
+            iframemagazine = magazine + $(this).data('page');
+            $("#iframemagazine").attr('src', iframemagazine);
+            $('.bd-example-modal-lg').modal();
+        });
+    });
+
+
+    $(function(){
+        $("#header").load("partials/header.html");
+        $("#portada").load("partials/portada.html");
+        $("#indice").load("partials/indice.html");
+        $("#myfooter").load("partials/footer.html");
+        $("#modal").load("partials/modal.html");
+    });
+</script>
+  </body>
+</html>
